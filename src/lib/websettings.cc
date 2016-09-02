@@ -27,7 +27,7 @@ Web::Web() :
 	background(true),
 	loadImages(true),
 	enableJavascript(true),
-	enableIntelligentShrinking(true),
+	enableIntelligentShrinking(false),
 	minimumFontSize(-1),
 	printMediaType(false),
 	defaultEncoding(""),

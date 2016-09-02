@@ -241,7 +241,7 @@ PdfCommandLineParser::PdfCommandLineParser(PdfGlobal & s, QList<PdfObject> & ps)
 	addarg("include-in-outline", 0, "Include the page in the table of contents and outlines", new ConstSetter<bool>(od.includeInOutline, true));
 	addarg("exclude-from-outline", 0, "Do not include the page in the table of contents and outlines", new ConstSetter<bool>(od.includeInOutline, false));
 
-	addarg("disable-smart-shrinking", 1, "Disable the intelligent shrinking strategy used by WebKit that makes the pixel/dpi ratio none constant",new ConstSetter<bool>(od.web.enableIntelligentShrinking, false));
+	addarg("disable-smart-shrinking", 0, "Disable the intelligent shrinking strategy used by WebKit that makes the pixel/dpi ratio none constant",new ConstSetter<bool>(od.web.enableIntelligentShrinking, false));
  	addarg("enable-smart-shrinking", 0, "Enable the intelligent shrinking strategy used by WebKit that makes the pixel/dpi ratio none constant",new ConstSetter<bool>(od.web.enableIntelligentShrinking, true));
 
 	extended(false);

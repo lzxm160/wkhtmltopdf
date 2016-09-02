@@ -40,10 +40,8 @@ void ConverterPrivate::updateWebSettings(QWebSettings * ws, const settings::Web 
 	if (!s.defaultEncoding.isEmpty())
 		ws->setDefaultTextEncoding(s.defaultEncoding);
 	if (!s.enableIntelligentShrinking) {
-		//ws->setPrintingMaximumShrinkFactor(1.0);
-		//ws->setPrintingMinimumShrinkFactor(1.0);
-		ws->setPrintingMaximumShrinkFactor(0.1);
-		ws->setPrintingMinimumShrinkFactor(0.1);
+		ws->setPrintingMaximumShrinkFactor(1.0);
+		ws->setPrintingMinimumShrinkFactor(1.0);
 	}
 	ws->setPrintingMediaType(s.printMediaType?"print":"screen");
 #endif
